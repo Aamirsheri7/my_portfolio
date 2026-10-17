@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
 
 * {
   scroll-behavior: smooth;
@@ -16,18 +15,26 @@
 }
 
 body {
-  @apply bg-dark-900 text-dark-50;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
 
-/* Smooth scrollbar */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-dark-800;
+  background-color: #1e293b;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-teal-500 rounded-full hover:bg-teal-400;
+  background-color: #14b8a6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2dd4bf;
 }

@@ -148,4 +148,11 @@ const About = () => {
                 <p className="text-sm text-dark-400 leading-relaxed">{item.description}</p>
               </motion.div>
             );
-            })}
+          })}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
